@@ -39,10 +39,10 @@
             <h1>JAMES CASTRILLON</h1>
             <h2>PRODUCT OWNER Sr - Dev Autodidacta </h2>
             <div class="redes">
-                
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
                 <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -52,8 +52,8 @@
             <h2>Sobre Mí</h2>
             <p><span>Hola, soy James Castrillon.</span> 
                 Como Product Owner con amplia experiencia en desarrollo para diversas industrias, también soy un desarrollador autodidacta, lo que me permite entender las necesidades del negocio y traducirlas efectivamente en soluciones tecnológicas.</p>
-
-            <div class="fila">
+           
+                <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
@@ -140,7 +140,7 @@
         <div class="col">
             <h3>Technical Skills</h3>
             <div class="skill">
-                <span>Javascript</span>
+                <span>JavaScript</span>
                 <div class="barra-skill">
                     <div class="progreso">
                         <span>80%</span>
@@ -156,15 +156,15 @@
                 </div>
             </div>
             <div class="skill">
-                <span>Nodejs</span>
+                <span>NodeJs</span>
                 <div class="barra-skill">
                     <div class="progreso">
-                        <span>85%</span>
+                        <span>80%</span>
                     </div>
                 </div>
             </div>
             <div class="skill">
-                <span>Mongodb</span>
+                <span>MongoDB</span>
                 <div class="barra-skill">
                     <div class="progreso">
                         <span>90%</span>
@@ -172,7 +172,7 @@
                 </div>
             </div>
             <div class="skill">
-                <span>continuous delivery</span>
+                <span>Continuous Delivery</span>
                 <div class="barra-skill">
                     <div class="progreso">
                         <span>100%</span>
@@ -277,8 +277,8 @@
                 </div>
             </div>
             <div class="item der">
-                <h4>Front Developer</h4>
-                <span class="casa">Product Owner</span>
+                <h4>Product owner</h4>
+                <span class="casa">Tres Astronautas</span>
                 <span class="fecha">2023 - Actualmente</span>
                 <p> Implemento estimaciones de proyectos y cronogramas de entregas iterativas e incrementales, lo que permite una adaptación flexible a medida que avanzan los proyectos. Esto resulta en una mayor eficiencia y la entrega de valor de manera continua.</p>
                 <div class="conectord">
@@ -307,23 +307,46 @@
     <div class="fila">
         <!-- Formulario -->
         <div class="col">
-            <input type="text" placeholder="Tú Nombre">
-            <input type="text" placeholder="Número telefónico">
-            <input type="text" placeholder="Dirección de correo">
-            <input type="text" placeholder="Tema">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <button>
+            <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
+            <input type="tel" id="phone" name="phone" placeholder="Número telefónico" required>
+            <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <button type="submit">
                 Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
             </button>
+        </form>
+        <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('Fq1RLGaNGy8HE798Y')
+</script>
+<script>
+    const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_8r1rrzv';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar Mensaje';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
         </div>
-        <!-- Mapa -->
-        <div class="col">
-            <img src="img/ubicacion.png" alt="">
-            
-        </div>
-    </div>
-</div>
+        
 </section>
 
 <!-- footer -->
@@ -332,9 +355,10 @@
     <i class="fa-solid fa-angles-up"></i>
 </a>
 <div class="redes">
-       <a href="#"><i class="fa-brands fa-skype"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="#"><i class="fa-solid fa-rss"></i></a>
+    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
 </div>
 </footer>
 

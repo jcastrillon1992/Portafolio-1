@@ -45,10 +45,11 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #ffffff;
+    color: #248dd2;
 }
 .nav-responsive{
-    background: #ffffff;
+    background:#248dd2;
+    color: #ffffff;
     padding: 5px 10 px;
     border-radius: 5px;
     cursor:pointer;
@@ -73,8 +74,8 @@ html{
     border-radius: 40px;
 }
 .inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid #303035;
+    margin-top: 50px;
+    border: 10px solid #ffffff;
     display: block;
     width: 80%;
     margin: auto;
@@ -100,7 +101,7 @@ html{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: .2s;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #ffffff;
@@ -258,6 +259,8 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #248dd2;
 }
+/* Sobre mi */
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -427,7 +430,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .htmlcss{
@@ -439,77 +442,78 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .nodejs{
+.skills .skill .NodeJs{
     width: 0%;
-    animation: 2s nodejs forwards;
+    animation: 2s NodeJs forwards;
 }
-@keyframes .nodejs {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .Mongodb {
-    width: 0%;
-    animation: 2s mongodb forwards;
-}
-@keyframes .Mongodb {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
+@keyframes NodeJs {
     0%{width: 0%;}
     100%{width: 80%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .MongoDB{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s MongoDB forwards;
 }
-@keyframes trabajo {
+@keyframes MongoDB {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .ContinuousDelivery{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s ContinuousDelivery forwards;
 }
-@keyframes creatividad {
+@keyframes ContinuousDelivery {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 90%;}
 }
 
-.skills .skill .dedicacion{
+.skills .skill .Innovación{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s Innovación forwards;
 }
-@keyframes dedicacion {
+@keyframes Innovación {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 90%;}
 }
 
-.skills .skill .proyect{
+.skills .skill .Cumplimientocomercial{
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 2s Cumplimientocomercial forwards;
 }
-@keyframes proyect {
+@keyframes Cumplimientocomercial {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 85%;}
 }
+
+.skills .skill .Gerenciafinanciera{
+    width: 0%;
+    animation: 2s Gerenciafinanciera forwards;
+}
+@keyframes Gerenciafinanciera {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .SCRUM{
+    width: 0%;
+    animation: 2s SCRUM forwards;
+}
+@keyframes SCRUM {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .ProyectManagementIT{
+    width: 0%;
+    animation: 2s ProyectManagementIT forwards;
+}
+@keyframes ProyectManagementIT {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -618,31 +622,36 @@ html{
 }
 
 /* SECCION CONTACTO */
-.contacto{
+.contacto {
     background-image: url(img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+    text-align: center; /* Añadido para centrar texto */
 }
-.contacto .contenido-seccion{
+.contacto .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    text-align: center; /* Asegura que el texto dentro esté centrado */
 }
-.contacto h2{
+.contacto h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+.contacto .fila {
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
 }
-.contacto .col{
+.contacto .col {
     width: 50%;
     padding: 10px;
-    position: relative;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
-.contacto .col input, .contacto .col textarea{
+.contacto .col input, .contacto .col textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -651,21 +660,21 @@ html{
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
-.contacto button{
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
-    width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
-    position: relative;
+    position: relative; /* Necesario para el overlay */
     z-index: 10;
 }
-.contacto button .overlay{
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -675,38 +684,43 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.contacto button:hover .overlay {
     width: 100%;
 }
-.contacto .col img{
+.contacto .col img {
     width: 100%;
 }
-.contacto .col .info{
+.contacto .col .info {
     position: absolute;
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px; /* Corrige max-swidth a max-width */
     left: 50%;
     transform: translate(-50%, -50%);
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
-.contacto .col .info ul{
+.contacto .col .info ul {
     list-style: none;
+    padding: 0; /* Añadido para eliminar el padding por defecto */
+    margin: 0; /* Añadido para eliminar el margen por defecto */
 }
-.contacto .col .info ul li{
+.contacto .col .info ul li {
     margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
+.contacto .col .info ul li i {
     color: #248dd2;
     display: inline-block;
     margin-right: 20px;
 }
+
+
 footer{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
-    position: relative;
+    position: center;
     width: 100%;
 }
 footer .redes{
@@ -723,7 +737,11 @@ footer .redes a{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: .2s;
+}
+
+footer .redes a:hover{
+    background-color: #248dd2;
 }
 footer .arriba{
     display: block;
@@ -791,16 +809,7 @@ footer .arriba{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
+    
     .contacto .fila{
         display: block;
     }

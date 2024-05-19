@@ -23,14 +23,14 @@ function efectoHabilidades(){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("Nodejs");
-        habilidades[3].classList.add("Mongodb");
-        habilidades[4].classList.add("continuous delivery");
+        habilidades[2].classList.add("NodeJs");
+        habilidades[3].classList.add("MongoDB");
+        habilidades[4].classList.add("ContinuousDelivery");
         habilidades[5].classList.add("Innovación");
-        habilidades[6].classList.add("Cumplimiento comercial");
-        habilidades[7].classList.add("Gerencia financiera");
+        habilidades[6].classList.add("Cumplimientocomercial");
+        habilidades[7].classList.add("Gerenciafinanciera");
         habilidades[8].classList.add("SCRUM");
-        habilidades[9].classList.add("proyect");
+        habilidades[9].classList.add("ProyectManagementIT");
     }
 }
 
